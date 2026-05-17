@@ -86,7 +86,7 @@ else {
 
 respostaBot.textContent = resposta;
 
-        respostaBot.style.background = "white";
+        respostaBot.style.background = "black";
         respostaBot.style.padding = "10px";
         respostaBot.style.marginBottom = "10px";
         respostaBot.style.borderRadius = "10px";
