@@ -1,0 +1,31 @@
+.about {
+  padding: 100px 20px;
+
+  background: #111827;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 800px;
+
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+
+  margin-bottom: 20px;
+
+  color: #45a6db;
+}
+
+.about p {
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  color: #cbd5e1;
+}
