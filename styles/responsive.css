@@ -16,28 +16,22 @@
     width: 100%;
   }
 
-  .navbar {
-  flex-direction: column;
-
-  gap: 15px;
-}
-
   .menu {
   flex-wrap: wrap;
 
   justify-content: center;
-}
+  }
 
   .logo {
   font-size: 24px;
-}
+  }
 
-.menu-toggle {
+  .menu-toggle {
 
   display: block;
-}
+  }
 
-.menu {
+  .menu {
 
   display: none;
 
@@ -54,10 +48,10 @@
   padding: 20px;
 
   border-radius: 12px;
-}
+  }
 
-.menu.active {
+  .menu.active {
 
   display: flex;
-}
+  }
 }
