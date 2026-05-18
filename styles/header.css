@@ -89,3 +89,12 @@ header {
   margin-top: 30px;
 
 }
+
+.menu-toggle {
+
+  display: none;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}
