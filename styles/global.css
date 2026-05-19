@@ -11,8 +11,8 @@ body {
 }
 
 button {
-  background: #bec080;
-  color: rgb(100, 101, 95);
+  background: #6e6f4e;
+  color: rgb(255, 255, 210);
 
   border: none;
 
@@ -25,10 +25,15 @@ button {
   cursor: pointer;
 
   transition: 0.3s;
+  
+  box-shadow: 0 0 2px #bfaf49;
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+
+  box-shadow: 0 0 8px #ffff57;
+
 }
 
 img {
