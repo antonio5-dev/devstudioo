@@ -63,7 +63,7 @@ else if (
 ) {
 
     resposta =
-    "O Assitente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. Como eu! 🤖 Seus clientes poderão tirar dúvidas sobre sues produtos, sempre que quiserem. E será sempre bem atendido.";
+    "O Assitente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. Como eu! 🤖 Seus clientes poderão tirar dúvidas sobre seus produtos, sempre que quiserem. E serão sempre muito bem atendidos.";
 
 }
 
@@ -73,7 +73,7 @@ else if (
 ) {
 
     resposta =
-    "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🚀 Solicitem um Orçamento e comece hoje a modernizar o seu Negócio!";
+    "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🚀 Solicite um Orçamento e comece hoje a modernizar o seu Negócio!";
 
 }
 
