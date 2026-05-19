@@ -53,17 +53,17 @@ if (
 ) {
 
     resposta =
-    "Criamos sites modernos, rápidos e responsivos para empresas e profissionais que querem atrair mais clientes 😄";
+    "Criamos sites modernos, rápidos e responsivos para empresas e profissionais que querem ter mais presença Online. 😄";
 
 }
 
 else if (
-    mensagem.toLowerCase().includes("chatbot") ||
+    mensagem.toLowerCase().includes("assistente") ||
     mensagem.toLowerCase().includes("ia")
 ) {
 
     resposta =
-    "Também desenvolvemos chatbots integrados ao site para atendimento automático e geração de clientes 🤖";
+    "O Assitente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. 🤖";
 
 }
 
@@ -73,14 +73,14 @@ else if (
 ) {
 
     resposta =
-    "Oferecemos suporte, manutenção e atualizações contínuas para manter seu site sempre funcionando 🚀";
+    "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🚀";
 
 }
 
 else {
 
     resposta =
-    "Olá 😄 Podemos ajudar com sites profissionais, chatbots com IA e suporte técnico.";
+    "Obrigado pelo Contato! 😄";
 
 }
 
