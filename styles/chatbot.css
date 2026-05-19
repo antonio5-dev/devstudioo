@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #216c3b;
+    background: #3a29a9;
     color: rgb(66, 66, 66);
     width: 60px;
     height: 60px;
@@ -29,7 +29,7 @@
 }
 
 .chatbot-header {
-    background: #216c3b;
+    background: #04284c;
     color: rgb(255, 255, 255);
     padding: 15px;
     display: flex;
@@ -56,7 +56,7 @@
 }
 
 .chatbot-input-area button {
-    background: #216c3b;
+    background: #04284c;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
