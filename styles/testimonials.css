@@ -3,7 +3,13 @@
 
   text-align: center;
 
-  background: #0f172a;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+  url("../images/dep1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .testimonials h2 {
