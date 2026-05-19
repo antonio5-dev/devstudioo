@@ -52,6 +52,8 @@
 
   object-fit: contain;
 
+  border-radius: 110px;
+
 }
 
 .portfolio-item p {
