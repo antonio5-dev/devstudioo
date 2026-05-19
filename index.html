@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="styles/testimonials.css">
   <link rel="stylesheet" href="styles/chatbot.css">
   <link rel="stylesheet" href="styles/portifolio.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/responsive.css">
 
@@ -74,11 +75,9 @@
 
   <div class="hero-buttons">
 
-  <a
-    href="https://wa.me/5571982905351"
-    target="_blank"
-  >
-    <button>Solicite um orçamento pelo nosso WhatsApp</button>
+  <a 
+    href="#contato">
+    <button>Solicite um orçamento</button>
   </a>
 
   <a
@@ -246,6 +245,49 @@
     </a>
 
   </div>
+
+</section>
+
+<section class="contact" id="contato">
+
+  <h2>Entre em Contato</h2>
+
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  >
+
+  <input
+    type="hidden"
+    name="access_key"
+    value="70370039-be7c-488c-8230-ad80ed668693"
+  >
+
+  <input
+    type="text"
+    name="nome"
+    placeholder="Seu nome"
+    required
+  >
+
+  <input
+    type="tel"
+    name="telefone"
+    placeholder="Seu WhatsApp"
+    required
+  >
+
+  <textarea
+    name="mensagem"
+    placeholder="Descreva seu caso"
+    required
+  ></textarea>
+
+  <button type="submit">
+    Enviar Solicitação
+  </button>
+
+</form>
 
 </section>
 
