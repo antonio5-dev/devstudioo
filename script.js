@@ -53,7 +53,7 @@ if (
 ) {
 
     resposta =
-    "Criamos sites modernos, rápidos e responsivos para empresas e profissionais que querem ter mais presença Online. 😄";
+    "Criamos sites modernos, rápidos e responsivos para Empresas e Profissionais. Confira nosso Portifólio aqui no Site! 😄";
 
 }
 
@@ -63,7 +63,7 @@ else if (
 ) {
 
     resposta =
-    "O Assitente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. 🤖";
+    "O Assitente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. Como eu! 🤖 Seus clientes poderão tirar dúvidas sobre sues produtos, sempre que quiserem. E será sempre bem atendido.";
 
 }
 
@@ -73,7 +73,7 @@ else if (
 ) {
 
     resposta =
-    "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🚀";
+    "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🚀 Solicitem um Orçamento e comece hoje a modernizar o seu Negócio!";
 
 }
 
