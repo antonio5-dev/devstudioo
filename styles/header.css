@@ -9,7 +9,7 @@ header {
 
   padding: 20px 40px;
 
-  background: #0f172a;
+  background: #173823;
 
   z-index: 1000;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-  color: #42dccf;
+  color: #70d55e;
 
   font-size: 28px;
 }
@@ -45,7 +45,7 @@ header {
 }
 
 .menu a:hover {
-  color: #45a6db;
+  color: #70d55e;
 }
 
 .telegram-button {
@@ -68,7 +68,7 @@ header {
 
   transition: 0.3s;
 
-  box-shadow: 0 0 5px #25e0ee;
+  box-shadow: 0 0 5px #70d55e;
 
 }
 
@@ -78,7 +78,7 @@ header {
 
   opacity: 0.9;
 
-  box-shadow: 0 0 10px #25e0ee;
+  box-shadow: 0 0 10px #70d55e;
 
 }
 
