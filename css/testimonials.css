@@ -10,12 +10,6 @@
   background-repeat: no-repeat;
 }
 
-.testimonials h2 {
-  font-size: var(--font-5xl);
-  color: var(--text-primary);
-  margin-bottom: var(--spacing-xxl);
-}
-
 .testimonial-cards {
   display: flex;
   gap: var(--spacing-md);

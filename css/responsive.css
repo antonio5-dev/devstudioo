@@ -17,6 +17,7 @@
 
   h3 {
     font-size: var(--font-xl);
+    margin-top: 20px;
   }
 
   p {
