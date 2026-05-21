@@ -9,7 +9,7 @@ header {
   padding: var(--spacing-md) var(--spacing-xl);
   background: var(--color-primary);
   z-index: 1000;
-  padding-top: var(--spacing-sm);
+  padding-top: var(--spacing-lg);
   padding-bottom: var(--spacing-sm);
 }
 
