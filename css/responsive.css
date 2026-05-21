@@ -4,11 +4,7 @@
 @media (max-width: 768px) {
   /* Ajustes de fonte */
   .hero h1 {
-    font-size: var(--font-3xl);
-  }
-  
-  .hero h2 {
-    font-size: var(--font-2xl);
+    font-size: var(--font-4xl);
   }
   
   .hero p {
@@ -16,11 +12,11 @@
   }
 
   h2 {
-    font-size: var(--font-2xl);
+    font-size: var(--font-3xl);
   }
 
   p {
-  font-size: var(--font-md);
+  font-size: var(--font-lg);
   }
   
   /* Cards */
