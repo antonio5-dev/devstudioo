@@ -1,0 +1,54 @@
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-md);
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-size: var(--font-6xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  font-size: var(--font-lg);
+  max-width: 600px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-logo {
+  width: 180px;
+  margin-bottom: var(--spacing-md);
+  border-radius: 110px;
+}
+
+/* Grupo de botões do Hero */
+.hero-button {
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: var(--shadow-lg);
+}
+
+.telegram-button {
+  background: var(--btn-telegram-bg);
+  color: white;
+}
+
+.whatsapp-button {
+  background: var(--btn-whatsapp-bg);
+  color: white;
+}

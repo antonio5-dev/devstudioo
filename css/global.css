@@ -1,0 +1,185 @@
+/* ============================================
+   VARIÁVEIS GLOBAIS - FÁCIL TROCA PARA OUTROS PROJETOS
+   ============================================ */
+:root {
+  /* CORES PRINCIPAIS - Mude aqui para adaptar ao projeto */
+  --color-primary: #242f24;      /* Fundo principal */
+  --color-secondary: #3e5040;    /* Fundo secundário */
+  --color-accent: #8dbb85;       /* Cor de destaque */
+  --color-accent-dark: #297336;  /* Destaque escuro */
+  --color-accent-light: #c8a96b; /* Destaque claro */
+  --color-bg-dark: #000000;      /* Fundo escuro */
+  --color-bg-light: #2c4526;     /* Fundo claro escuro */
+  
+  /* CORES DE TEXTO */
+  --text-primary: #ffffff;       /* Texto principal */
+  --text-secondary: #beccdd;     /* Texto secundário */
+  --text-dark: #333333;          /* Texto escuro */
+  
+  /* CORES DE BOTÃO */
+  --btn-primary-bg: #6e6f4e;
+  --btn-primary-color: white;
+  --btn-telegram-bg: #229ED9;
+  --btn-telegram-color: white;
+  --btn-whatsapp-bg: #25D366;
+  --btn-whatsapp-color: white;
+
+  
+  /* ESPAÇAMENTOS PADRÃO */
+  --spacing-xs: 8px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 50px;
+  --spacing-section: 80px;
+  --spacing-section-large: 100px;
+  
+  /* TAMANHOS DE FONTE */
+  --font-xs: 14px;
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+  --font-2xl: 28px;
+  --font-3xl: 32px;
+  --font-4xl: 36px;
+  --font-5xl: 40px;
+  --font-6xl: 56px;
+  
+  /* BORDAS */
+  --border-radius-sm: 8px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 15px;
+  --border-radius-xxl: 20px;
+  --border-radius-circle: 50%;
+  
+  /* SOMBRAS */
+  --shadow-sm: 0 0 2px var(--color-accent);
+  --shadow-md: 0 0 5px var(--color-accent);
+  --shadow-lg: 0 0 8px var(--color-accent);
+  --shadow-xl: 0 0 15px var(--color-accent);
+  
+  /* TRANSIÇÕES */
+  --transition-fast: 0.3s;
+  --transition-normal: 0.5s;
+  
+  /* FONTES */
+  --font-family: 'Elms Sans', sans-serif;
+  
+  /* LAYOUT */
+  --container-max-width: 1200px;
+  --container-padding: 20px;
+}
+
+/* ============================================
+   RESET E BASE
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: var(--spacing-section-large) var(--container-padding);
+}
+
+.section-sm {
+  padding: var(--spacing-section) var(--container-padding);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* ============================================
+   BOTÕES PADRÃO
+   ============================================ */
+button, .btn {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-sm);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-family);
+  font-weight: bold
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   IMAGENS PADRÃO
+   ============================================ */
+img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: var(--border-radius-xxl);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   TÍTULOS PADRÃO
+   ============================================ */
+h1 {
+  font-size: var(--font-6xl);
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: var(--font-4xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+h3 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+p {
+  font-size: var(--font-md);
+  line-height: 1.6;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.elms-sans-<uniquifier> {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

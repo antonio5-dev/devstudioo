@@ -1,0 +1,72 @@
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+  /* Ajustes de fonte */
+  .hero h1 {
+    font-size: var(--font-3xl);
+  }
+  
+  .hero h2 {
+    font-size: var(--font-2xl);
+  }
+  
+  .hero p {
+    font-size: var(--font-sm);
+  }
+
+  p {
+  font-size: var(--font-sm);
+  }
+  
+  /* Cards */
+  .card {
+    width: 100%;
+  }
+  
+  /* Menu Mobile */
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: var(--color-bg-light);
+    position: absolute;
+    top: 80px;
+    right: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+  }
+  
+  .menu.active {
+    display: flex;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: var(--font-xl);
+  }
+  
+  /* Espaçamentos */
+  .section,
+  .services,
+  .portfolio,
+  .testimonials,
+  .about {
+    padding: var(--spacing-section) var(--container-padding);
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    width: calc(100% - 40px);
+    right: var(--spacing-md);
+    left: var(--spacing-md);
+  }
+  
+  .hero-buttons button {
+    width: 100%;
+  }
+}

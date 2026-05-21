@@ -3,335 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevStudio - Websites Inteligentes</title>
+  <title>VerdeStudio - Websites Inteligentes</title>
 
   <!-- SEO Básico -->
-    <meta name="description"
-          content="VerdeStudio oferece Websites e Automação em Atendimento Online.">
-    <meta name="author" content="DevStudio - Websites Inteligentes">
+  <meta name="description" content="VerdeStudio oferece Websites e Automação em Atendimento Online.">
+  <meta name="author" content="VerdeStudio - Websites Inteligentes">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/images/vrd-logo.png" type="image/png">
+  <!-- Favicon -->
+  <link rel="icon" href="/images/vrd-logo.png" type="image/png">
 
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/hero.css">
-  <link rel="stylesheet" href="styles/services.css">
-  <link rel="stylesheet" href="styles/portifolio.css">
-  <link rel="stylesheet" href="styles/testimonials.css">
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/contact.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <link rel="stylesheet" href="styles/chatbot.css">
+  <!-- Link dos ícones das Redes Sociais -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/portifolio.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/local.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Monsieur+La+Doulaise&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
 
 <body>
-
   <header>
+    <nav class="navbar">
+      <h3 class="logo">VerdeStudio</h3>
+      <div class="menu-toggle">☰</div>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#local">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="navbar">
+  <main>
+    <section class="hero" id="inicio">
+      <img src="images/vrd-logo.png" alt="Logo VerdeStudio" class="hero-logo">  
+      <h1>Transforme sua presença online</h1>
+      <p>Websites modernos, chatbots e automação para Empresas e Profissionais</p>
+      <div class="hero-buttons">
 
-    <h2 class="logo">VerdeStudio</h2>
+        <a href="#contato"><button>Solicite um orçamento</button></a>
 
-    <div class="menu-toggle">
+        <a href="https://t.me/sofia_atendimento_bot" target="_blank">
+          <button class="hero-button telegram-button">Converse com nossa Atendente IA no Telegram</button>
+        </a>
 
-      ☰
-      
+        <a href="https://wa.me/5511999999999" target="_blank">
+          <button class="hero-button whatsapp-button">Fale conosco no WhatsApp</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>💻 Websites Profissionais</h3>
+          <p>Criamos sites modernos para empresas e profissionais.</p>
+        </div>
+        <div class="card">
+          <h3>🤖 Assistente Virtual de Atendimento</h3>
+          <p>Seu Site com Atendimento Automatizado 24/7.</p>
+        </div>
+        <div class="card">
+          <h3>🛠️ Suporte + Manutenção</h3>
+          <p>Serviços de Assinatura para Manutenção e Atualizações contínuas no seu Site.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Portfólio</h2>
+      <div class="portfolio-items">
+        <a href="https://barbearia-do-lobo.vercel.app" target="_blank" class="portfolio-item">
+          <img src="images/logo-barber.png" alt="Barbearia do Lobo">
+          <p>Barbearia do Lobo</p>
+        </a>
+        <a href="https://dona-flor.vercel.app" target="_blank" class="portfolio-item">
+          <img src="images/sdf-logo.png" alt="Dona Flor Centro de Estética">
+          <p>Dona Flor Centro de Estética</p>
+        </a>
+        <a href="https://pizzaria-planeta.vercel.app/" target="_blank" class="portfolio-item">
+          <img src="images/pizz-logo.png" alt="Pizzaria Planeta">
+          <p>Pizzaria Planeta</p>
+        </a>
+        <a href="https://advogado-roberto.vercel.app" target="_blank" class="portfolio-item">
+          <img src="images/logo-adv.png" alt="Roberto Sena Advogado">
+          <p>Roberto Sena Advogado</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+      <h2>Depoimentos</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>"Excelente atendimento! Agora tenho um site muito profissional."</p>
+          <h3>João Silva</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Nosso negócio ganhou muito mais capacidade de atendimento online."</p>
+          <h3>Marina Costa</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Rápido, moderno e fácil de usar no celular."</p>
+          <h3>Carlos Souza</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-content">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em criar sites modernos, automação e chatbots para elevar seu atendimento a outro nível.</p>
+        <div class="about-social">
+          <a href="https://instagram.com/verdestudio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/verdestudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://tiktok.com/@verdestudio" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <h2>Solicite um Orçamento</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="70370039-be7c-488c-8230-ad80ed668693">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="tel" name="telefone" placeholder="Seu contato" required>
+        <textarea name="mensagem" placeholder="Descreva seu Negócio" required></textarea>
+        <button type="submit">Enviar Solicitação</button>
+      </form>
+    </section>
+
+    <section class="local" id="local">
+      <h2>Localização</h2>
+      <p>Rua Exemplo, 123 - Bairro, Cidade - SP</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=SEU_LINK_AQUI"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 VerdeStudio - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-button" id="chatbot-button">💬</div>
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <h3>Atendimento Virtual</h3>
+      <span id="close-chat">✖</span>
     </div>
-
-    <ul class="menu">
-
-       <li><a href="#inicio">Início</a></li>
-
-       <li><a href="#servicos">Serviços</a></li>
-
-       <li><a href="#portfolio">Portfólio</a></li>
-
-       <li><a href="#depoimentos">Depoimentos</a></li>
-
-       <li><a href="#sobre">Sobre Nós</a></li>
-
-       <li><a href="#contato">Contato</a></li>
-
-    </ul>
-
-  </nav>
-
-</header>
-
-  <section class="hero" id="inicio">
-
-  <img src="images/vrd-logo.png" alt="Logo VerdeStudio" class="hero-logo">  
-
-  <h1>Transforme sua presença online</h1>
-
-  <p>
-    Sites modernos, chatbots e automação para Empresas e Profissionais
-  </p>
-
-  <div class="hero-buttons">
-
-  <a 
-    href="#contato">
-    <button>Solicite um orçamento</button>
-  </a>
-
-  <a
-    href="https://t.me/sofia_atendimento_bot"
-    target="_blank"
-  >
-    <button class="telegram-button">
-      Converse com nossa Atendente IA no Telegram
-    </button>
-  </a>
-
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+      <button id="send-chat">Enviar</button>
+    </div>
   </div>
 
-  </section>
-
-<section class="services" id="servicos">
-
-  <h2>Nossos Serviços</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>💻 Sites Profissionais</h3>
-
-      <p>
-        Criamos sites modernos para empresas e profissionais.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>🤖 Assistente Virtual de Atendimento</h3>
-
-      <p>
-        Seu Site com Atendimento Automatizado 24/7.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>🛠️ Suporte + Manutenção</h3>
-
-      <p>
-        Serviços de Assinatura para Manutenção e Atualizações contínuas no seu Site.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="portfolio" id="portfolio">
-
-  <h2>Portfólio</h2>
-
-  <div class="portfolio-items">
-
-    <a
-      href="https://barbearia-do-lobo.vercel.app"
-      target="_blank"
-      class="portfolio-item"
-    >
-
-      <img
-        src="images/logo-barber.png"
-        alt="Barbearia do Lobo"
-      >
-      <p>Barbearia do Lobo</p>
-
-    </a>
-
-    <a
-      href="https://dona-flor.vercel.app"
-      target="_blank"
-      class="portfolio-item"
-    >
-
-      <img
-        src="images/sdf-logo.png"
-        alt="Dona Flor Centro de Estética"
-      >
-      <p>Dona Flor Centro de Estética</p>
-
-    </a>
-
-    <a
-      href="https://pizzaria-planeta.vercel.app/"
-      target="_blank"
-      class="portfolio-item"
-    >
-
-      <img
-        src="images/pizz-logo.png"
-        alt="Pizzaria Planeta"
-      >
-      <p>Pizzaria Planeta</p>
-
-    </a>
-
-    <a
-      href="https://advogado-roberto.vercel.app"
-      target="_blank"
-      class="portfolio-item"
-    >
-
-      <img
-        src="images/logo-adv.png"
-        alt="Roberto Sena Advogado"
-      >
-      <p>Roberto Sena Advogado</p>
-
-    </a>
-
-  </div>
-
-</section>
-
-<section class="testimonials" id="depoimentos">
-
-  <h2>Depoimentos</h2>
-
-  <div class="testimonial-cards">
-
-    <div class="testimonial">
-
-      <p>
-        "Excelente atendimento! Agora tenho um site muito profissional."
-      </p>
-
-      <h3>João Silva</h3>
-
-    </div>
-
-    <div class="testimonial">
-
-      <p>
-        "Nosso negócio ganhou muito mais capacidade de atendimento online."
-      </p>
-
-      <h3>Marina Costa</h3>
-
-    </div>
-
-    <div class="testimonial">
-
-      <p>
-        "Rápido, moderno e fácil de usar no celular."
-      </p>
-
-      <h3>Carlos Souza</h3>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="about" id="sobre">
-
-  <div class="about-content">
-
-    <h2>Sobre Nós</h2>
-
-    <p>
-      Somos especialistas em criar sites modernos,
-      automação e chatbots para elevar seu atendimento a outro nível.
-    </p>
-
-  </div>
-
-</section>
-
-<section class="contact" id="contato">
-
-  <h2>Solicite um Orçamento</h2>
-
-<form
-  action="https://api.web3forms.com/submit"
-  method="POST"
-  >
-
-  <input
-    type="hidden"
-    name="access_key"
-    value="70370039-be7c-488c-8230-ad80ed668693"
-  >
-
-  <input
-    type="text"
-    name="nome"
-    placeholder="Seu nome"
-    required
-  >
-
-  <input
-    type="tel"
-    name="telefone"
-    placeholder="Seu contato"
-    required
-  >
-
-  <textarea
-    name="mensagem"
-    placeholder="Descreva seu Negócio"
-    required
-  ></textarea>
-
-  <button type="submit">
-    Enviar Solicitação
-  </button>
-
-</form>
-
-</section>
-
-<footer>
-
-  <p>
-    © 2026 VerdeStudio - Todos os direitos reservados.
-  </p>
-
-</footer>
-
-<!-- CHATBOT -->
-<div class="chatbot-button" id="chatbot-button">
-  💬
-</div>
-
-<div class="chatbot-container" id="chatbot-container">
-
-  <div class="chatbot-header">
-    <h3>Atendimento Virtual 🤖</h3>
-    <span id="close-chat">✖</span>
-  </div>
-
-  <div class="chatbot-messages" id="chatbot-messages">
-
-    <div class="message bot">Olá, eu sou o Jonny, Atendente Virtual da VerdeStudio<br>
-      <br>Me pergunte sobre:<br>
-      <br>• A Criação do seu Site Profissional<br>
-      <br>• Como funciona o Assistente Virtual no seu Site<br>
-      <br>• Suporte, Manutenção e Atualização de Sites<br>
-    </div>
-
-  </div>
-
-  <div class="chatbot-input-area">
-    <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
-    <button id="send-chat">Enviar</button>
-  </div>
-
-</div>
-
-  <script src="script.js"></script>
-
+  <!-- JavaScript -->
+  <script src="/script.js"></script>
+  <script src="/chatbot.js"></script>
 </body>
 </html>

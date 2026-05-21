@@ -1,0 +1,100 @@
+/* ============================================
+   CHATBOT
+   ============================================ */
+.chatbot-button {
+  position: fixed;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  background: var(--color-accent);
+  color: rgb(13, 43, 0);
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-2xl);
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-fast);
+}
+
+.chatbot-button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: var(--spacing-md);
+  width: 320px;
+  background: var(--color-bg-dark);
+  border-radius: var(--border-radius-xl);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.chatbot-header {
+  background: var(--color-bg-light);
+  color: var(--text-primary);
+  padding: var(--spacing-sm);
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatbot-messages {
+  height: 300px;
+  padding: var(--spacing-sm);
+  background: var(--color-accent);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.chatbot-input-area {
+  display: flex;
+}
+
+.chatbot-input-area input {
+  flex: 1;
+  padding: var(--spacing-sm);
+}
+
+.chatbot-input-area button {
+  background: var(--color-bg-light);
+  color: var(--text-primary);
+  border: none;
+  padding: var(--spacing-xs);
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Estilos de mensagem */
+.message-user,
+.message-bot {
+  padding: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  border-radius: var(--border-radius-md);
+  width: fit-content;
+  max-width: 85%;
+}
+
+.message-user {
+  background: var(--color-accent-light);
+  color: var(--text-dark);
+  margin-left: auto;
+}
+
+.message-bot {
+  background: var(--color-accent-dark);
+  color: var(--text-primary);
+}
+
+#close-chat {
+  cursor: pointer;
+  font-weight: bold;
+}

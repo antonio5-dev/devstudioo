@@ -1,0 +1,40 @@
+/* ============================================
+   SERVIÇOS SECTION
+   ============================================ */
+.services {
+  padding: var(--spacing-section) var(--container-padding);
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.services h2 {
+  font-size: var(--font-5xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.cards {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--color-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  width: 300px;
+  transition: var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-accent);
+}

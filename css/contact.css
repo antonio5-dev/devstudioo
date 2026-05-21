@@ -1,0 +1,28 @@
+/* ============================================
+   CONTATO SECTION
+   ============================================ */
+.contact {
+  padding: var(--spacing-section) var(--container-padding);
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact input,
+.contact textarea {
+  padding: var(--spacing-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-sm);
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}

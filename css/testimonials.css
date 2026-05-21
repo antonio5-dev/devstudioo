@@ -1,0 +1,42 @@
+/* ============================================
+   DEPOIMENTOS SECTION
+   ============================================ */
+.testimonials {
+  padding: var(--spacing-section-large) var(--container-padding);
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/dep1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonials h2 {
+  font-size: var(--font-5xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: var(--color-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-xxl);
+  max-width: 300px;
+  transition: var(--transition-fast);
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial h3 {
+  color: #45a6db;
+}

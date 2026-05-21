@@ -1,0 +1,81 @@
+/* ============================================
+   HEADER / NAVEGAÇÃO
+   ============================================ */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: var(--color-primary);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.logo {
+  color: var(--color-accent);
+  font-size: var(--font-xl);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0
+}
+
+.menu {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+}
+
+.menu a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+
+.menu a:hover {
+  color: var(--color-accent);
+}
+
+/* Botão Telegram no Header */
+.telegram-button {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: var(--border-radius-md);
+  background: var(--btn-telegram-bg);
+  color: var(--btn-telegram-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.telegram-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Grupo de botões do Hero */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+/* Menu Toggle (Mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
