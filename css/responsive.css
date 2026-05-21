@@ -16,7 +16,7 @@
   }
 
   p {
-  font-size: var(--font-sm);
+  font-size: var(--font-md);
   }
   
   /* Cards */
@@ -46,7 +46,7 @@
   
   /* Logo */
   .logo {
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
   }
   
   /* Espaçamentos */
