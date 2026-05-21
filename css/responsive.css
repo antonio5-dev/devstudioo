@@ -58,6 +58,9 @@
   }
   
   /* Espaçamentos */
+  .navbar {
+  align-items: center;
+  }
   .section,
   .services,
   .portfolio,
