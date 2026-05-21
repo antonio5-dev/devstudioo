@@ -4,11 +4,11 @@
 @media (max-width: 768px) {
   /* Ajustes de fonte */
   .hero h1 {
-    font-size: var(--font-5xl);
+    font-size: var(--font-3xl);
   }
   
   .hero h2 {
-    font-size: var(--font-3xl);
+    font-size: var(--font-2xl);
   }
   
   .hero p {
