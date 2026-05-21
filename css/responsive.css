@@ -10,13 +10,13 @@
   .hero p {
     font-size: var(--font-lg);
   }
-  
-  h3 {
-    font-size: var(--font-2xl);
-  }
 
   h2 {
     font-size: var(--font-3xl);
+  }
+
+  h3 {
+    font-size: var(--font-xl);
   }
 
   p {
