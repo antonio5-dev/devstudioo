@@ -27,9 +27,3 @@
 .card:hover {
   transform: translateY(-5px);
 }
-
-.card h3 {
-  font-size: var(--font-lg);
-  margin-bottom: var(--spacing-sm);
-  color: var(--color-accent);
-}
