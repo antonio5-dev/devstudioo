@@ -2,6 +2,9 @@
    RESPONSIVIDADE
    ============================================ */
 @media (max-width: 768px) {
+  .hero {
+  padding-top: 100px;
+  }
   /* Ajustes de fonte */
   .hero h1 {
     font-size: var(--font-4xl);
