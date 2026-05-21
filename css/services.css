@@ -7,11 +7,6 @@
   text-align: center;
 }
 
-.services h2 {
-  font-size: var(--font-5xl);
-  margin-bottom: var(--spacing-xxl);
-}
-
 .cards {
   display: flex;
   gap: var(--spacing-md);
