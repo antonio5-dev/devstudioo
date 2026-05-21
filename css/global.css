@@ -176,10 +176,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.elms-sans-<uniquifier> {
-  font-family: "Elms Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
