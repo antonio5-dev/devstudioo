@@ -15,6 +15,10 @@
     font-size: var(--font-lg);
   }
 
+  h2 {
+    font-size: var(--font-2xl);
+  }
+
   p {
   font-size: var(--font-md);
   }
