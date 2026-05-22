@@ -89,7 +89,7 @@ const Chatbot = (function() {
         
         // 2. Se não encontrou no FAQ, chama a IA
         try {
-            const response = await fetch("https://devstudioo.onrender.com", {
+            const response = await fetch("https://devstudioo.onrender.com/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: message })
