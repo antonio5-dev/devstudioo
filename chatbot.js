@@ -5,7 +5,7 @@
 
 const Chatbot = (function() {
     // Configuração do Bot
-    const BOT_NAME = "Jonny";
+    const BOT_NAME = "Sofia";
     const BOT_EMOJI = "🤖";
     
     // Palavras-chave e respostas
@@ -16,7 +16,7 @@ const Chatbot = (function() {
         },
         assistente: {
             keywords: ["assistente", "ia", "chatbot", "bot", "atendente", "virtual", "automatizado"],
-            response: "O Assistente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. Seus clientes poderão tirar dúvidas sobre seus produtos, sempre que quiserem. 🤖 E serão sempre muito bem atendidos!"
+            response: "O Assistente Virtual é um Chatbot com Inteligência Artificial que funciona no seu Site, atendendo seus clientes 24 horas por dia. Seus clientes poderão tirar dúvidas sobre seus produtos, sempre que quiserem. 🤖 E serão sempre muito bem atendidos!"
         },
         suporte: {
             keywords: ["suporte", "manutenção", "atualização", "ajuda", "problema", "manutencao"],
@@ -32,7 +32,7 @@ const Chatbot = (function() {
         }
     };
     
-    const DEFAULT_RESPONSE = "Obrigado pelo Contato! 😄";
+    const DEFAULT_RESPONSE = "Obrigada pelo Contato! 😄";
     
     // DOM Elements (inicializados depois)
     let elements = {};
@@ -74,10 +74,11 @@ const Chatbot = (function() {
         return messageDiv;
     }
     
-    // Processar mensagem e retornar resposta
-    function getBotResponse(message) {
+    // Processar mensagem — FAQ primeiro, IA como fallback
+    async function getBotResponse(message) {
         const lowerMessage = message.toLowerCase();
         
+        // 1. Tenta responder pelo FAQ
         for (const [key, data] of Object.entries(KEYWORDS)) {
             for (const keyword of data.keywords) {
                 if (lowerMessage.includes(keyword.toLowerCase())) {
@@ -86,11 +87,22 @@ const Chatbot = (function() {
             }
         }
         
-        return DEFAULT_RESPONSE;
+        // 2. Se não encontrou no FAQ, chama a IA
+        try {
+            const response = await fetch("http://127.0.0.1:5000/api/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: message })
+            });
+            const data = await response.json();
+            return data.reply;
+        } catch (error) {
+            return "Desculpe, estou com dificuldades técnicas. Entre em contato pelo WhatsApp! 😊";
+        }
     }
     
     // Enviar mensagem
-    function sendMessage() {
+    async function sendMessage() {
         const message = elements.chatInput.value.trim();
         
         if (message === "") return;
@@ -103,14 +115,17 @@ const Chatbot = (function() {
         
         // Rola para o final
         elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
-        
-        // Simula resposta do bot (delay para parecer natural)
-        setTimeout(() => {
-            const response = getBotResponse(message);
-            const botMessage = createBotMessage(response);
-            elements.chatMessages.appendChild(botMessage);
-            elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
-        }, 500);
+
+        // Mostra "digitando..." enquanto aguarda resposta
+        const typing = createBotMessage("digitando...");
+        elements.chatMessages.appendChild(typing);
+        elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+
+        const response = await getBotResponse(message);
+
+        elements.chatMessages.removeChild(typing);
+        elements.chatMessages.appendChild(createBotMessage(response));
+        elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
     }
     
     // Enviar mensagem ao pressionar Enter
