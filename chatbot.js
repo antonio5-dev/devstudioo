@@ -11,23 +11,23 @@ const Chatbot = (function() {
     // Palavras-chave e respostas
     const KEYWORDS = {
         site: {
-            keywords: ["site", "sites", "website", "pagina", "página", "criar site", "site profissional"],
+            keywords: ["fazem site", "criam sites", "fazem website", "criam websites", "desenvolvem websites"],
             response: "Criamos sites modernos, rápidos e responsivos para Empresas e Profissionais. ✨ Confira nosso Portfólio aqui no Site! 😄"
         },
         assistente: {
-            keywords: ["assistente", "ia", "chatbot", "bot", "atendente", "virtual", "automatizado"],
-            response: "O Assistente Virtual é um Chatbot com Inteligência Artificial que funciona no seu Site, atendendo seus clientes 24 horas por dia. Seus clientes poderão tirar dúvidas sobre seus produtos, sempre que quiserem. 🤖 E serão sempre muito bem atendidos!"
+            keywords: ["o que é um assistente virtual", "o que é um chatbot", "o que é um bot", "o que é um atendente virtual"],
+            response: "O Assistente Virtual é um Chatbot que funciona no seu Site, atendendo seus clientes 24 horas por dia. Seus clientes poderão tirar dúvidas sobre seus produtos, sempre que quiserem. 🤖 E serão sempre muito bem atendidos!"
         },
         suporte: {
-            keywords: ["suporte", "manutenção", "atualização", "ajuda", "problema", "manutencao"],
-            response: "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. 🔧 Solicite um Orçamento e comece hoje a modernizar o seu Negócio!"
+            keywords: ["dão suporte", "dão manutenção", "fazem atualização", "fazem atualizações", "se der problema", "se precisar manutenção"],
+            response: "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. Temos diferentes planos de assinatura para atender as demandas do seu Website. 🔧 Solicite um Orçamento e comece hoje a modernizar o seu Negócio!"
         },
         preco: {
             keywords: ["preço", "valor", "quanto custa", "preco", "orcamento", "orçamento"],
-            response: "Nossos preços variam conforme a complexidade do projeto. 💰 Solicite um orçamento pelo formulário de contato e teremos prazer em te atender!"
+            response: "Nossos preços variam conforme a complexidade do projeto. Você pode solicitar um orçamento, basta clicar no botão Solicite um Orçamento, ou clicar em Contato no menu superior. Ao ser direcionado para o foumulário de contato, deixe seu WhastApp ou e-mail, e descreva sua empresa ou seu negócio. Retornaremos prontamente!"
         },
         prazo: {
-            keywords: ["prazo", "tempo", "entrega", "demora", "quanto tempo"],
+            keywords: ["qual o prazo", "quanto tempo estar online", "quanto tempo entrega", "quanto demora"],
             response: "O prazo médio de entrega é de 7 a 14 dias úteis, dependendo da complexidade do projeto. ⏱️"
         }
     };
@@ -97,7 +97,7 @@ const Chatbot = (function() {
             const data = await response.json();
             return data.reply;
         } catch (error) {
-            return "Desculpe, estou com dificuldades técnicas. Entre em contato pelo WhatsApp! 😊";
+            return "Desculpe, estou com dificuldades técnicas. Deixe uma mensagem no Formulário de Contato e responderemos prontamente! 😊";
         }
     }
     
@@ -156,9 +156,9 @@ const Chatbot = (function() {
     // Mensagem de boas-vindas
     function showWelcomeMessage() {
         const welcomeText = `Olá, eu sou a ${BOT_NAME}, Atendente Virtual da VerdeStudio!<br>Me pergunte sobre:<br>
-                            <br>• A Criação do seu Site Profissional<br>
-                            <br>• Como funciona o Atendimento Virtual no seu Site<br>
-                            <br>• Suporte, Manutenção e Atualização de Sites<br>
+                            <br>• A Criação do seu Website Profissional<br>
+                            <br>• Como funciona o Atendimento Virtual no seu Website<br>
+                            <br>• Suporte, Manutenção e Atualização do seu Websites<br>
                             <br>• Preços e Orçamentos<br>
                             <br>• Prazos de Entrega<br>`;
         
