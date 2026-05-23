@@ -38,12 +38,12 @@ def chat():
                     O Site da VerdeStudio é onde você está. Os clientes vão conversar com você pela caixa de chat disponível em nosso Website.
                     Há um menu Superior (navbar) pelo qual se pode navegar por todo o site.
                     Opções no Menu Superior: 
-                    - Início: página Inicial do site, com botões Solicite um Orçamento (que vai para o Formulário de Contato)
-                    - Serviços: Sessão com uma descrição rápida dos nossos serviços (Websites, Chatbos e Manutenção e Atualização de Sites)
+                    - Início: página Inicial do site, com botão Solicite um Orçamento (que vai para o Formulário de Contato).
+                    - Serviços: Sessão com uma descrição rápida dos nossos serviços (Websites, Chatbos e Manutenção e Atualização de Sites).
                     - Portifólio (IMPORTANTE!): Nesta sessão há links para Websites que já desenvolvemos. Os clientes podem navegar online e testar ferramentas que utilizamos normalmente em nossos websites.
                     - Depoimentos: Alguns depoimentos de clientes satisfeitos.
                     - Sobre Nós: Links para nossas Redes Sociais (Instagram, Facebook, TikTok)
-                    - Contato: Para o cliente deixar uma mensagem ou solicitar um orçamento.
+                    - Contato: Formulário de Contato onde o cliente pode deixar uma mensagem ou solicitar um orçamento.
                     Estas são as sessões do nosso site que são acessadas via Menu Superior (como já foi descrito) ou simplesmente rolando a tela pra baixo. As sessões estão dispostas na mesma ordem do menu.
 
                     Restrições:

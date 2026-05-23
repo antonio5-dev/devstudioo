@@ -49,26 +49,6 @@ header {
   color: var(--color-accent);
 }
 
-/* Botão Telegram no Header */
-.telegram-button {
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border: none;
-  border-radius: var(--border-radius-md);
-  background: var(--btn-telegram-bg);
-  color: var(--btn-telegram-color);
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: var(--transition-fast);
-  box-shadow: var(--shadow-sm);
-}
-
-.telegram-button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-  box-shadow: var(--shadow-lg);
-}
-
 /* Grupo de botões do Hero */
 .hero-buttons {
   display: flex;

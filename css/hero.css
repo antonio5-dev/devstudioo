@@ -42,13 +42,3 @@
   opacity: 0.9;
   box-shadow: var(--shadow-lg);
 }
-
-.telegram-button {
-  background: var(--btn-telegram-bg);
-  color: white;
-}
-
-.whatsapp-button {
-  background: var(--btn-whatsapp-bg);
-  color: white;
-}
