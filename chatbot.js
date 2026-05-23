@@ -155,7 +155,7 @@ const Chatbot = (function() {
     
     // Mensagem de boas-vindas
     function showWelcomeMessage() {
-        const welcomeText = `Olá, eu sou o ${BOT_NAME}, Atendente Virtual da VerdeStudio!<br>Me pergunte sobre:<br>
+        const welcomeText = `Olá, eu sou a ${BOT_NAME}, Atendente Virtual da VerdeStudio!<br>Me pergunte sobre:<br>
                             <br>• A Criação do seu Site Profissional<br>
                             <br>• Como funciona o Atendimento Virtual no seu Site<br>
                             <br>• Suporte, Manutenção e Atualização de Sites<br>
