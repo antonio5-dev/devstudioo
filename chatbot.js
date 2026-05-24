@@ -12,7 +12,7 @@ const Chatbot = (function() {
     const KEYWORDS = {
         site: {
             keywords: ["fazem site", "criam sites", "fazem website", "criam websites", "desenvolvem websites"],
-            response: "Criamos sites modernos, rápidos e responsivos para Empresas e Profissionais. ✨ Confira nosso Portfólio aqui no Site! 😄"
+            response: "Sim! Criamos sites inteligentes, rápidos e responsivos para Empresas e Profissionais. ✨ Confira nosso Portfólio aqui no nosso Site! 😄"
         },
         assistente: {
             keywords: ["o que é um assistente virtual", "o que é um chatbot", "o que é um bot", "o que é um atendente virtual"],
@@ -23,12 +23,12 @@ const Chatbot = (function() {
             response: "Nós damos suporte, manutenção e fazemos atualizações periódicas para manter seu site sempre funcionando. Temos diferentes planos de assinatura para atender as demandas do seu Website. 🔧 Solicite um Orçamento e comece hoje a modernizar o seu Negócio!"
         },
         preco: {
-            keywords: ["preço", "valor", "quanto custa", "preco", "orcamento", "orçamento"],
-            response: "Nossos preços variam conforme a complexidade do projeto. Você pode solicitar um orçamento, basta clicar no botão Solicite um Orçamento, ou clicar em Contato no menu superior. Ao ser direcionado para o foumulário de contato, deixe seu WhastApp ou e-mail, e descreva sua empresa ou seu negócio. Retornaremos prontamente!"
+            keywords: ["qual o preço", "qual o valor", "quanto custa", "qual o preco"],
+            response: "Nossos preços variam conforme a complexidade do projeto. Você pode solicitar um orçamento, basta clicar no botão [Solicite um Orçamento], ou clicar em [Contato] no menu superior. Ao ser direcionado para o Formulário de Contato, deixe seu whastApp ou e-mail, e sua mensagem. Retornaremos prontamente!"
         },
         prazo: {
             keywords: ["qual o prazo", "quanto tempo estar online", "quanto tempo entrega", "quanto demora"],
-            response: "O prazo médio de entrega é de 7 a 14 dias úteis, dependendo da complexidade do projeto. ⏱️"
+            response: "O prazo médio de entrega é de 5 a 15 dias úteis, dependendo da complexidade do projeto. ⏱️"
         }
     };
     
@@ -155,10 +155,10 @@ const Chatbot = (function() {
     
     // Mensagem de boas-vindas
     function showWelcomeMessage() {
-        const welcomeText = `Olá, eu sou a ${BOT_NAME}, Atendente Virtual da VerdeStudio!<br>Me pergunte sobre:<br>
-                            <br>• A Criação do seu Website Profissional<br>
+        const welcomeText = `Olá, eu sou a ${BOT_NAME}, Atendente Virtual da Websites Inteligentes!<br>Me pergunte sobre:<br>
+                            <br>• A Criação do seu Website<br>
                             <br>• Como funciona o Atendimento Virtual no seu Website<br>
-                            <br>• Suporte, Manutenção e Atualização do seu Websites<br>
+                            <br>• Suporte, Manutenção e Atualizações do seu Website<br>
                             <br>• Preços e Orçamentos<br>
                             <br>• Prazos de Entrega<br>`;
         
