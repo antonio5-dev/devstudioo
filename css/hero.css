@@ -9,7 +9,7 @@
   align-items: center;
   text-align: center;
   padding: var(--spacing-md);
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/img1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(147, 162, 157, 0.6)), url("../images/foto6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,6 +50,6 @@
 
 .hero-button:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 0.3;
   box-shadow: var(--shadow-lg);
 }

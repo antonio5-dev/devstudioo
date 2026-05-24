@@ -28,7 +28,7 @@
 }
 
 .testimonial:hover {
-  transform: translateY(-10px);
+  transform: scale(1.03);
   box-shadow: var(--shadow-lg);
 }
 
@@ -37,8 +37,6 @@
   margin-top: 10px;
 }
 
-
 .testimonials h2 {
-  color: #A6EBCB;
-  transition-duration: var(--transition-normal);
+  color: white;
 }

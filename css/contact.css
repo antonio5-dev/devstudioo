@@ -28,6 +28,5 @@
 }
 
 .contact h2 {
-  color: #A6EBCB;
-  transition-duration: var(--transition-normal);
+  color: white;
 }

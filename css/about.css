@@ -6,6 +6,7 @@
   background: var(--color-secondary);
   display: flex;
   justify-content: center;
+  background: linear-gradient(rgba(167, 222, 200, 0.6), rgba(109, 136, 126, 0.6));
 }
 
 .about-content {
@@ -22,12 +23,16 @@
 
 .about-social a {
   font-size: var(--font-6xl);
-  color: var(--text-secondary);
-  text-shadow: var(--shadow-sm);
-  transition: var(--transition-fast);
+  color: var(--text-primary);
+  text-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
 }
 
 .about-social a:hover {
   transform: scale(1.2);
-  text-shadow: var(--shadow-lg);
+  text-shadow: var(--shadow-xl);
+}
+
+.about h2 {
+  text-shadow: var(--shadow-md);
 }

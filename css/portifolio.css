@@ -5,7 +5,7 @@
   padding: var(--spacing-section-large) var(--container-padding);
   background: var(--color-secondary);
   text-align: center;
-  box-shadow: var(shadow-md);
+  background: linear-gradient(rgba(167, 222, 200, 0.6), rgba(109, 136, 126, 0.6));
 }
 
 .portfolio-items {
@@ -38,4 +38,8 @@
   color: var(--color-bg-light);
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+.portfolio h2 {
+  text-shadow: var(--shadow-md);
 }

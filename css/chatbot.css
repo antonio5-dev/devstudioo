@@ -48,7 +48,7 @@
 .chatbot-messages {
   height: 300px;
   padding: var(--spacing-sm);
-  background: rgb(236, 255, 235);
+  background: #e2ffe0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
