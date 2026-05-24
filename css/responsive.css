@@ -3,7 +3,7 @@
    ============================================ */
 @media (max-width: 768px) {
   .hero {
-  padding-top: 100px;
+  padding-top: 50px;
   }
   /* Ajustes de fonte */
   .hero h1 {
@@ -34,6 +34,7 @@
   /* Menu Mobile */
   .menu-toggle {
     display: block;
+    color: white;
   }
   
   .menu {
@@ -45,6 +46,7 @@
     right: var(--spacing-md);
     padding: var(--spacing-md);
     border-radius: var(--border-radius-lg);
+    color: white;
   }
   
   .menu.active {
