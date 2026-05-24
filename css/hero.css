@@ -18,18 +18,29 @@
 .hero h1 {
   font-size: var(--font-6xl);
   margin-bottom: var(--spacing-md);
+  color: white;
 }
 
 .hero p {
   font-size: var(--font-lg);
   max-width: 600px;
   margin-bottom: var(--spacing-lg);
+  color: white;
+  transition-duration: var(--transition-normal);
+}
+
+.hero p:hover {
+  transform: scale(1.02);
+  color: var(--color-accent);
+  text-shadow: var(--shadow-sm);
+
 }
 
 .hero-logo {
   width: 180px;
   margin-bottom: var(--spacing-md);
   border-radius: 110px;
+  font: var(--font-logo);
 }
 
 /* Grupo de botões do Hero */

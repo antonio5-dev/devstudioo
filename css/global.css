@@ -3,17 +3,17 @@
    ============================================ */
 :root {
   /* CORES PRINCIPAIS - Mude aqui para adaptar ao projeto */
-  --color-primary: #242f24;      /* Fundo principal */
-  --color-secondary: #3e5040;    /* Fundo secundário */
-  --color-accent: #8dbb85;       /* Cor de destaque */
+  --color-primary: #2d434c;      /* Fundo principal */
+  --color-secondary: #a4aca9;    /* Fundo secundário */
+  --color-accent: #A6EBCB;       /* Cor de destaque */
   --color-accent-dark: #297336;  /* Destaque escuro */
   --color-accent-light: #c8a96b; /* Destaque claro */
   --color-bg-dark: #000000;      /* Fundo escuro */
-  --color-bg-light: #2c4526;     /* Fundo claro escuro */
+  --color-bg-light: #1a292f;     /* Fundo claro escuro */
   
   /* CORES DE TEXTO */
-  --text-primary: #ffffff;       /* Texto principal */
-  --text-secondary: #beccdd;     /* Texto secundário */
+  --text-primary: #2d434c;       /* Texto principal */
+  --text-secondary: #A6EBCB;     /* Texto secundário */
   --text-dark: #333333;          /* Texto escuro */
   
   /* CORES DE BOTÃO */
@@ -56,7 +56,7 @@
   --border-radius-circle: 50%;
   
   /* SOMBRAS */
-  --shadow-sm: 0 0 2px var(--color-accent);
+  --shadow-sm: 0 0 2px var(--color-primary);
   --shadow-md: 0 0 5px var(--color-accent);
   --shadow-lg: 0 0 8px var(--color-accent);
   --shadow-xl: 0 0 15px var(--color-accent);

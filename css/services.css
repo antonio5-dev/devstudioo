@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.services h2 {
+  color: #A6EBCB;
+  transition-duration: var(--transition-normal);
+}
+
 .cards {
   display: flex;
   gap: var(--spacing-md);
@@ -26,10 +31,11 @@
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .card h3 {
   font-size: var(--font-lg);
   margin-bottom: var(--spacing-sm);
-  color: var(--color-accent);
+  color: var(--color-bg-light);
 }

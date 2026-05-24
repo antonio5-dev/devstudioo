@@ -25,11 +25,12 @@ header {
 }
 
 .logo {
-  color: var(--color-accent);
-  font-size: var(--font-xl);
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0
+    
 }
 
 .menu {
@@ -39,14 +40,14 @@ header {
 }
 
 .menu a {
-  color: var(--text-primary);
+  color: white;
   text-decoration: none;
   transition: var(--transition-fast);
   line-height: 1;
 }
 
 .menu a:hover {
-  color: var(--color-accent);
+  color: var(--text-secondary);
 }
 
 /* Grupo de botões do Hero */

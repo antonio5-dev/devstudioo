@@ -26,3 +26,8 @@
   min-height: 150px;
   resize: vertical;
 }
+
+.contact h2 {
+  color: #A6EBCB;
+  transition-duration: var(--transition-normal);
+}

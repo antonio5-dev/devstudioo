@@ -15,18 +15,19 @@
 
 .about-social {
   display: flex;
-  gap: var(--spacing-xxl);
+  gap: var(--spacing-section);
   justify-content: center;
   margin-top: var(--spacing-lg);
 }
 
 .about-social a {
   font-size: var(--font-6xl);
-  color: var(--text-primary);
+  color: var(--text-secondary);
+  text-shadow: var(--shadow-sm);
   transition: var(--transition-fast);
 }
 
 .about-social a:hover {
-  color: var(--color-accent);
   transform: scale(1.2);
+  text-shadow: var(--shadow-lg);
 }

@@ -5,6 +5,7 @@
   padding: var(--spacing-section-large) var(--container-padding);
   background: var(--color-secondary);
   text-align: center;
+  box-shadow: var(shadow-md);
 }
 
 .portfolio-items {
@@ -18,11 +19,11 @@
 
 .portfolio-item {
   text-decoration: none;
-  transition: var(--transition-fast);
+  transition: var(--transition-normal);
 }
 
 .portfolio-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px)
 }
 
 .portfolio-item img {
@@ -34,7 +35,7 @@
 
 .portfolio-item p {
   margin-top: var(--spacing-xs);
-  color: var(--text-secondary);
+  color: var(--color-bg-light);
   font-size: 1.1rem;
   font-weight: bold;
 }

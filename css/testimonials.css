@@ -29,9 +29,16 @@
 
 .testimonial:hover {
   transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
 }
 
 .testimonial h3 {
-  color: #45a6db;
+  color: var(--color-bg-light);
   margin-top: 10px;
+}
+
+
+.testimonials h2 {
+  color: #A6EBCB;
+  transition-duration: var(--transition-normal);
 }
