@@ -109,7 +109,7 @@
 
   /* Portfolio — 1 card visível em telas muito pequenas */
   .portfolio-item {
-    flex: 0 0 calc(105% - 14px);
+    flex: 0 0 calc(100% - 14px);
   }
 
   .portfolio-arrow.left {
