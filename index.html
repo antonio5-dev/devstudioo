@@ -77,8 +77,6 @@
       <h2>Portfólio</h2>
       <div class="portfolio-wrapper">
 
-        <button class="portfolio-arrow left" id="portfolio-prev" aria-label="Projeto anterior">&#8249;</button>
-
         <div class="portfolio-track-outer">
         <div class="portfolio-track" id="portfolio-track">
 
@@ -105,9 +103,11 @@
         </div>
         </div>
 
-        <button class="portfolio-arrow right" id="portfolio-next" aria-label="Próximo projeto">&#8250;</button>
-
-        <div class="portfolio-dots" id="portfolio-dots"></div>
+        <div class="portfolio-dots" id="portfolio-dots">
+          <button class="portfolio-arrow left" id="portfolio-prev" aria-label="Projeto anterior">&#8249;</button>
+          <!-- os dots são inseridos pelo JS aqui -->
+          <button class="portfolio-arrow right" id="portfolio-next" aria-label="Próximo projeto">&#8250;</button>
+        </div>
 
       </div>
     </section>

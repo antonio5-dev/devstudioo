@@ -11,7 +11,7 @@
   .hero h1 {
     font-size: var(--font-4xl);
   }
-  
+
   .hero p {
     font-size: var(--font-lg);
   }
@@ -27,18 +27,18 @@
   p {
     font-size: var(--font-lg);
   }
-  
+
   /* Cards */
   .card {
     width: 100%;
   }
-  
+
   /* Menu Mobile */
   .menu-toggle {
     display: block;
     color: white;
   }
-  
+
   .menu {
     display: none;
     flex-direction: column;
@@ -50,16 +50,16 @@
     border-radius: var(--border-radius-lg);
     color: white;
   }
-  
+
   .menu.active {
     display: flex;
   }
-  
+
   /* Logo */
   .logo {
     font-size: var(--font-lg);
   }
-  
+
   /* Espaçamentos */
   .navbar {
     align-items: center;
@@ -73,12 +73,12 @@
     padding: var(--spacing-section) var(--container-padding);
   }
 
-  /* Services — texto corrido */
+  /* Services */
   .services-content {
     max-width: 100%;
   }
 
-  /* Portfolio — carrossel */
+  /* Portfolio */
   .portfolio {
     overflow: hidden;
   }
@@ -87,19 +87,12 @@
     max-width: 100%;
   }
 
-  .portfolio-arrow.left {
-    left: -36px;
-  }
-
-  .portfolio-arrow.right {
-    right: -36px;
+  .portfolio-track-outer {
+    padding: 10px 0;
   }
 
   .portfolio-item {
-    flex: 0 0 calc(80% - 14px);
-  }
-  .portfolio-track-outer {
-  padding: 10px 0;
+    flex: 0 0 calc(75% - 14px);
   }
 }
 
@@ -109,21 +102,12 @@
     right: var(--spacing-md);
     left: var(--spacing-md);
   }
-  
+
   .hero-buttons button {
     width: 100%;
   }
 
-  /* Portfolio — 1 card visível em telas muito pequenas */
   .portfolio-item {
-    flex: 0 0 calc(100% - 14px);
-  }
-
-  .portfolio-arrow.left {
-    left: -28px;
-  }
-
-  .portfolio-arrow.right {
-    right: -28px;
+    flex: 0 0 calc(85% - 14px);
   }
 }

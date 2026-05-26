@@ -1,32 +1,45 @@
-/* ============================================
-   PORTFÓLIO CARROSSEL
-   Adicione este código ao seu script.js
-   ou inclua como <script src="portfolio-carousel.js"></script>
-   ============================================ */
 (function () {
-  const track     = document.getElementById('portfolio-track');
-  const cards     = track ? track.querySelectorAll('.portfolio-item') : [];
-  const dotsEl    = document.getElementById('portfolio-dots');
-  const btnPrev   = document.getElementById('portfolio-prev');
-  const btnNext   = document.getElementById('portfolio-next');
+  const track   = document.getElementById('portfolio-track');
+  const dotsEl  = document.getElementById('portfolio-dots');
+  const btnPrev = document.getElementById('portfolio-prev');
+  const btnNext = document.getElementById('portfolio-next');
 
-  if (!track || cards.length === 0) return;
+  if (!track) return;
 
-  const visible   = 3;
-  const total     = cards.length;
-  const maxIndex  = total - visible;
-  let   current   = 0;
-  let   timer;
-  const dotList   = [];
+  const cards   = track.querySelectorAll('.portfolio-item');
+  const total   = cards.length;
+  const GAP     = 20;
+  let current   = 0;
+  let timer;
+  let dotList   = [];
 
-  /* Cria os dots */
-  for (let i = 0; i <= maxIndex; i++) {
-    const d = document.createElement('button');
-    d.className = 'portfolio-dot' + (i === 0 ? ' active' : '');
-    d.setAttribute('aria-label', 'Ir para o item ' + (i + 1));
-    d.addEventListener('click', () => { goTo(i); resetTimer(); });
-    dotsEl.appendChild(d);
-    dotList.push(d);
+  /* Quantos cards cabem na janela */
+  function getVisible() {
+    const outerW = track.parentElement.offsetWidth - GAP * 2; /* desconta padding */
+    const cardW  = cards[0].offsetWidth + GAP;
+    return Math.round(outerW / cardW);
+  }
+
+  function getMaxIndex() {
+    return Math.max(0, total - getVisible());
+  }
+
+  /* Reconstrói dots conforme visível atual */
+  function buildDots() {
+    /* Remove dots antigos (mantém as setas) */
+    dotList.forEach(d => d.remove());
+    dotList = [];
+
+    const max = getMaxIndex();
+    for (let i = 0; i <= max; i++) {
+      const d = document.createElement('button');
+      d.className = 'portfolio-dot' + (i === current ? ' active' : '');
+      d.setAttribute('aria-label', 'Ir para o item ' + (i + 1));
+      d.addEventListener('click', () => { goTo(i); resetTimer(); });
+      /* Insere antes do botão direito */
+      btnNext.insertAdjacentElement('beforebegin', d);
+      dotList.push(d);
+    }
   }
 
   function updateDots() {
@@ -34,9 +47,8 @@
   }
 
   function goTo(idx) {
-    current = Math.max(0, Math.min(idx, maxIndex));
-    const gap    = 20; /* deve bater com o gap do CSS (--spacing-md = 20px) */
-    const cardW  = cards[0].offsetWidth + gap;
+    current = Math.max(0, Math.min(idx, getMaxIndex()));
+    const cardW = cards[0].offsetWidth + GAP;
     track.style.transform = `translateX(-${current * cardW}px)`;
     updateDots();
   }
@@ -44,11 +56,22 @@
   btnPrev.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
   btnNext.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
 
-  function advance() { goTo(current < maxIndex ? current + 1 : 0); }
-  function resetTimer() { clearInterval(timer); timer = setInterval(advance, 4000); }
+  function advance() {
+    goTo(current < getMaxIndex() ? current + 1 : 0);
+  }
 
-  /* Recalcula posição ao redimensionar a janela */
-  window.addEventListener('resize', () => goTo(current));
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(advance, 4000);
+  }
 
+  /* Reconstrói ao redimensionar */
+  window.addEventListener('resize', () => {
+    buildDots();
+    goTo(current);
+  });
+
+  /* Init */
+  buildDots();
   resetTimer();
 })();
