@@ -94,6 +94,9 @@
   .portfolio-item {
     flex: 0 0 calc(80% - 14px);
   }
+  .portfolio-track-outer {
+  padding: 10px 0;
+}
 }
 
 @media (max-width: 480px) {
