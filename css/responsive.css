@@ -95,7 +95,7 @@
   }
 
   .portfolio-item {
-    flex: 0 0 calc(100% - 14px);
+    flex: 0 0 calc(100%);
   }
 }
 
@@ -119,6 +119,6 @@
   }
 
   .portfolio-item {
-    flex: 0 0 calc(100% - 14px);
+    flex: 0 0 calc(100%);
   }
 }
