@@ -12,14 +12,13 @@
   margin-bottom: var(--spacing-lg);
 }
 
-/* Wrapper */
+/* Wrapper centralizado */
 .portfolio-wrapper {
-  position: relative;
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* Janela visível do carrossel */
+/* Janela visível — esconde o que transborda da trilha */
 .portfolio-track-outer {
   overflow: hidden;
   padding: 10px 10px;
@@ -35,13 +34,13 @@
 /* Card individual */
 .portfolio-item {
   flex: 0 0 calc(33.333% - 14px);
-  background: var(--color-secondary);
   overflow: hidden;
   text-decoration: none;
   transition: transform var(--transition-fast);
   position: relative;
 }
 
+/* Overlay escuro sobre a imagem */
 .portfolio-item::after {
   content: '';
   position: absolute;
@@ -68,7 +67,7 @@
   display: none;
 }
 
-/* Barra de controles: seta | dot dot | seta */
+/* Barra de controles: seta | dots | seta */
 .portfolio-dots {
   display: flex;
   justify-content: center;

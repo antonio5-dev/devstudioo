@@ -2,6 +2,8 @@
    RESPONSIVIDADE
    ============================================ */
 @media (max-width: 768px) {
+
+  /* Hero */
   .hero {
     padding-top: 25px;
     background-size: 300%;
@@ -15,6 +17,7 @@
     font-size: var(--font-lg);
   }
 
+  /* Fontes gerais */
   h2 {
     font-size: var(--font-3xl);
   }
@@ -27,10 +30,21 @@
     font-size: var(--font-lg);
   }
 
+  /* Espaçamentos gerais */
+  .section,
+  .services,
+  .portfolio,
+  .testimonials,
+  .about {
+    padding: var(--spacing-section) var(--container-padding);
+  }
+
+  /* Cards genéricos */
   .card {
     width: 100%;
   }
 
+  /* Menu mobile */
   .menu-toggle {
     display: block;
     color: white;
@@ -60,55 +74,48 @@
     align-items: center;
   }
 
-  .section,
-  .services,
-  .portfolio,
-  .testimonials,
-  .about {
-    padding: var(--spacing-section) var(--container-padding);
-  }
-
+  /* Services */
   .services-content {
     max-width: 100%;
   }
 
   /* Portfolio */
   .portfolio {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .portfolio-wrapper {
-    max-width: 80%;
+    max-width: 75%;
     margin: 0 auto;
   }
 
   .portfolio-track-outer {
-    padding: 10px 6px;
-  }
-
-  .portfolio-track {
-    padding: 0;
+    overflow: hidden;
+    padding: 10px 10px;
   }
 
   .portfolio-item {
     flex: 0 0 calc(100% - 14px);
-    overflow: hidden;
   }
 }
 
 @media (max-width: 480px) {
+
+  /* Chatbot */
   .chatbot-container {
     width: calc(100% - 40px);
     right: var(--spacing-md);
     left: var(--spacing-md);
   }
 
+  /* Hero */
   .hero-buttons button {
     width: 100%;
   }
 
+  /* Portfolio */
   .portfolio-wrapper {
-    max-width: 85%;
+    max-width: 80%;
   }
 
   .portfolio-item {
