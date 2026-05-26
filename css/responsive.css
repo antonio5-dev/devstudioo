@@ -92,6 +92,7 @@
 
   .portfolio-item {
     flex: 0 0 calc(100% - 14px);
+    overflow: hidden;
   }
 }
 
