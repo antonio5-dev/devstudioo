@@ -24,16 +24,20 @@
 .hero p {
   font-size: var(--font-lg);
   max-width: 600px;
+  margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
   color: white;
-  transition-duration: var(--transition-normal);
 }
 
-.hero p:hover {
-  transform: scale(1.02);
-  color: var(--color-accent);
-  text-shadow: var(--shadow-sm);
+.hero a p {
+  transition-duration: var(--transition-normal);
+  margin-top: var(--spacing-xl);
+  text-shadow: var(--shadow-lg);
+  font-size: var(--font-xl);
+}
 
+.hero a:hover p {
+  transform: scale(1.07);
 }
 
 .hero-logo {
