@@ -79,6 +79,10 @@
   }
 
   /* Portfolio — carrossel */
+.portfolio {
+  overflow: hidden;
+}
+
   .portfolio-wrapper {
     max-width: 100%;
   }
