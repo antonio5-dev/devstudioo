@@ -13,9 +13,8 @@
   let timer;
   let dotList   = [];
 
-  /* Quantos cards cabem na janela */
   function getVisible() {
-    const outerW = track.parentElement.offsetWidth - GAP * 2; /* desconta padding */
+    const outerW = track.parentElement.offsetWidth;
     const cardW  = cards[0].offsetWidth + GAP;
     return Math.round(outerW / cardW);
   }
@@ -24,9 +23,7 @@
     return Math.max(0, total - getVisible());
   }
 
-  /* Reconstrói dots conforme visível atual */
   function buildDots() {
-    /* Remove dots antigos (mantém as setas) */
     dotList.forEach(d => d.remove());
     dotList = [];
 
@@ -36,7 +33,6 @@
       d.className = 'portfolio-dot' + (i === current ? ' active' : '');
       d.setAttribute('aria-label', 'Ir para o item ' + (i + 1));
       d.addEventListener('click', () => { goTo(i); resetTimer(); });
-      /* Insere antes do botão direito */
       btnNext.insertAdjacentElement('beforebegin', d);
       dotList.push(d);
     }
@@ -65,13 +61,11 @@
     timer = setInterval(advance, 4000);
   }
 
-  /* Reconstrói ao redimensionar */
   window.addEventListener('resize', () => {
     buildDots();
     goTo(current);
   });
 
-  /* Init */
   buildDots();
   resetTimer();
 })();
