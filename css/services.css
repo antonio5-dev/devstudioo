@@ -18,17 +18,12 @@
   margin-bottom: var(--spacing-md);
 }
 
-.services-content a {
-  color: var(--color-accent);
-  font-weight: bold;
-  font-size: var(--font-md);
-  transition: var(--transition-normal);
-  display: inline-block;
-  margin-top: var(--spacing-sm);
-  font-size: inherit;
+.services-content a p {
+  transition-duration: var(--transition-normal);
+  margin-top: var(--spacing-xl);
 }
 
-.services-content a:hover {
-  text-shadow: var(--shadow-md);
+.services-content a:hover p {
+  text-shadow: var(--shadow-lg);
   transform: scale(1.05);
 }

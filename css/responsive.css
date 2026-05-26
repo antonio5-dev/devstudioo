@@ -3,7 +3,7 @@
    ============================================ */
 @media (max-width: 768px) {
   .hero {
-    padding-top: 50px;
+    padding-top: 45px;
     background-size: 300%;
   }
 
@@ -79,9 +79,9 @@
   }
 
   /* Portfolio — carrossel */
-.portfolio {
-  overflow: hidden;
-}
+  .portfolio {
+    overflow: hidden;
+  }
 
   .portfolio-wrapper {
     max-width: 100%;
@@ -100,7 +100,7 @@
   }
   .portfolio-track-outer {
   padding: 10px 0;
-}
+  }
 }
 
 @media (max-width: 480px) {
