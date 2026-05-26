@@ -21,9 +21,9 @@
 .services-content a p {
   transition-duration: var(--transition-normal);
   margin-top: var(--spacing-xl);
+  text-shadow: var(--shadow-md);
 }
 
 .services-content a:hover p {
-  text-shadow: var(--shadow-lg);
-  transform: scale(1.05);
+  transform: scale(1.07);
 }

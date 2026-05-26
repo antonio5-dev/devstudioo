@@ -98,11 +98,11 @@
     flex: 0 0 calc(100%);
   }
 
-
   .services a {
   transition-duration: var(--transition-normal);
   margin-top: var(--spacing-xl);
   text-shadow: var(--shadow-lg);
+  }
 }
 
 @media (max-width: 480px) {

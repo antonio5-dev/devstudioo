@@ -12,6 +12,10 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.portfolio a p {
+  text-shadow: var(--shadow-md);
+}
+
 /* Wrapper centralizado */
 .portfolio-wrapper {
   max-width: 700px;
