@@ -2,39 +2,33 @@
    SERVIÇOS SECTION
    ============================================ */
 .services {
-  padding: var(--spacing-section) var(--container-padding);
+  padding: var(--spacing-section-large) var(--container-padding);
   background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+.services-content {
+  max-width: 800px;
   text-align: center;
 }
 
-.services h2 {
+.services-content p {
   color: white;
+  margin-bottom: var(--spacing-md);
 }
 
-.cards {
-  display: flex;
-  gap: var(--spacing-md);
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: var(--container-max-width);
-  margin: 0 auto;
+.services-content a {
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: var(--font-md);
+  transition: var(--transition-normal);
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  font-size: inherit;
 }
 
-.card {
-  background: var(--color-secondary);
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius-lg);
-  width: 300px;
-  transition: var(--transition-fast);
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: var(--shadow-lg);
-}
-
-.card h3 {
-  font-size: var(--font-lg);
-  margin-bottom: var(--spacing-sm);
-  color: var(--color-bg-light);
+.services-content a:hover {
+  text-shadow: var(--shadow-md);
+  transform: scale(1.05);
 }

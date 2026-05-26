@@ -3,9 +3,10 @@
    ============================================ */
 @media (max-width: 768px) {
   .hero {
-  padding-top: 50px;
-  background-size: 300%;
+    padding-top: 50px;
+    background-size: 300%;
   }
+
   /* Ajustes de fonte */
   .hero h1 {
     font-size: var(--font-4xl);
@@ -24,7 +25,7 @@
   }
 
   p {
-  font-size: var(--font-lg);
+    font-size: var(--font-lg);
   }
   
   /* Cards */
@@ -61,14 +62,37 @@
   
   /* Espaçamentos */
   .navbar {
-  align-items: center;
+    align-items: center;
   }
+
   .section,
   .services,
   .portfolio,
   .testimonials,
   .about {
     padding: var(--spacing-section) var(--container-padding);
+  }
+
+  /* Services — texto corrido */
+  .services-content {
+    max-width: 100%;
+  }
+
+  /* Portfolio — carrossel */
+  .portfolio-wrapper {
+    max-width: 100%;
+  }
+
+  .portfolio-arrow.left {
+    left: -36px;
+  }
+
+  .portfolio-arrow.right {
+    right: -36px;
+  }
+
+  .portfolio-item {
+    flex: 0 0 calc(80% - 14px);
   }
 }
 
@@ -81,5 +105,18 @@
   
   .hero-buttons button {
     width: 100%;
+  }
+
+  /* Portfolio — 1 card visível em telas muito pequenas */
+  .portfolio-item {
+    flex: 0 0 calc(100% - 14px);
+  }
+
+  .portfolio-arrow.left {
+    left: -28px;
+  }
+
+  .portfolio-arrow.right {
+    right: -28px;
   }
 }

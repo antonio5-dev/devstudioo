@@ -65,42 +65,53 @@
     </section>
 
     <section class="services" id="servicos">
-      <h2>Nossos Serviços</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Websites Inteligentes</h3>
-          <p>Criamos sites modernos para empresas e profissionais.</p>
+        <div class="services-content">
+      
+         <p>Hoje, a presença digital faz parte da forma como empresas e profissionais se apresentam ao público. Muitas vezes, o primeiro contato de um cliente com um negócio acontece através da internet.</p>
+         <p>Um website ajuda a centralizar informações importantes, facilitar o contato e apresentar serviços de forma mais clara e profissional, tanto no computador quanto no celular.</p>
+         <p>Por isso, ter um website deixou de ser apenas um complemento e passou a fazer parte da forma como empresas e negócios se comunicam e se posicionam no ambiente digital.</p>
+         
+         <a href="servicos.html"><p>Saiba mais</p></a>
+      
         </div>
-        <div class="card">
-          <h3>Assistente Virtual de Atendimento</h3>
-          <p>Seu Site com Atendimento Automatizado 24/7, com Inteligência Artificial.</p>
-        </div>
-        <div class="card">
-          <h3>Suporte + Manutenção</h3>
-          <p>Diferentes Planos de Assinatura para atender bem a sua Empresa.</p>
-        </div>
-      </div>
     </section>
 
     <section class="portfolio" id="portfolio">
       <h2>Portfólio</h2>
-      <div class="portfolio-items">
+      <div class="portfolio-wrapper">
+
+        <button class="portfolio-arrow left" id="portfolio-prev" aria-label="Projeto anterior">&#8249;</button>
+
+        <div class="portfolio-track-outer">
+        <div class="portfolio-track" id="portfolio-track">
+
         <a href="https://barbearia-do-lobo.vercel.app" target="_blank" class="portfolio-item">
           <img src="images/logo-barber.png" alt="Barbearia do Lobo">
           <p>Barbearia do Lobo</p>
         </a>
+
         <a href="https://dona-flor.vercel.app" target="_blank" class="portfolio-item">
           <img src="images/sdf-logo.png" alt="Dona Flor Centro de Estética">
           <p>Dona Flor Centro de Estética</p>
         </a>
+
         <a href="https://pizzaria-planeta.vercel.app/" target="_blank" class="portfolio-item">
           <img src="images/pizz-logo.png" alt="Pizzaria Planeta">
           <p>Pizzaria Planeta</p>
         </a>
+
         <a href="https://advogado-roberto.vercel.app" target="_blank" class="portfolio-item">
           <img src="images/logo-adv.png" alt="Roberto Sena Advogado">
           <p>Roberto Sena Advogado</p>
         </a>
+
+        </div>
+        </div>
+
+        <button class="portfolio-arrow right" id="portfolio-next" aria-label="Próximo projeto">&#8250;</button>
+
+        <div class="portfolio-dots" id="portfolio-dots"></div>
+
       </div>
     </section>
 
@@ -169,5 +180,6 @@
   <!-- JavaScript -->
   <script src="/script.js"></script>
   <script src="/chatbot.js"></script>
+  <script src="/portfolio-carousel.js"></script>
 </body>
 </html>
